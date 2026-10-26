@@ -9,7 +9,7 @@ export default function Experience() {
         <SectionHeading
           number="03"
           eyebrow="Pengalaman"
-          title="Jejak magang saya."
+          title="Jejak Kerja Saya."
           description="Pengalaman profesional yang membentuk cara kerja saya."
         />
 

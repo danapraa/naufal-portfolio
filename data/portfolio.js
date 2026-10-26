@@ -23,8 +23,8 @@ export const about = {
     "Saya bersemangat untuk terus mengembangkan keterampilan teknis, mempelajari teknologi baru, dan berkontribusi dalam membangun solusi digital yang fungsional dan responsif.",
   ],
   stats: [
-    { value: "2", label: "Magang" },
-    { value: "2", label: "Proyek Aplikasi Web" },
+    { value: "2", label: "Pengalaman Kerja" },
+    { value: "5", label: "Project" },
     { value: "S1", label: "Informatika, Lulus 2026" },
   ],
 };
@@ -62,24 +62,27 @@ export const skillGroups = [
 
 export const experiences = [
   {
-    role: "Frontend Developer (Magang)",
+    role: "Frontend Developer Intern",
     company: "Bandung Techno Park",
     period: "Februari 2025 – Juni 2025",
     points: [
-      "Mengembangkan fitur antarmuka pengguna untuk proyek Jatim Bissa Startup.",
-      "Mengimplementasikan desain UI menjadi tampilan web yang responsif.",
-      "Berkolaborasi dengan tim backend dan desain untuk meningkatkan pengalaman pengguna.",
-      "Menjaga konsistensi desain dan usability pada setiap halaman.",
+      "Mengembangkan antarmuka pengguna untuk platform JATIM BISSA sebagai Frontend Developer dalam program WRAP Entrepreneurship 1 Program 2025.",
+      "Menerjemahkan konsep dan desain produk menjadi tampilan web yang fungsional, responsif, dan berorientasi pada pengalaman pengguna.",
+      "Mengimplementasikan dan menyempurnakan fitur front-end sesuai kebutuhan produk dan tujuan pengembangan startup.",
+      "Berkolaborasi dengan tim backend dan desain dalam mengintegrasikan fitur serta memastikan kesesuaian antara desain dan implementasi.",
+      "Menjaga konsistensi desain, usability, dan kualitas tampilan pada setiap halaman platform.",
     ],
   },
   {
-    role: "Desainer Grafis (Magang)",
+    role: "Web & Data Administration Intern",
     company: "Universitas Terbuka Surabaya",
     period: "September 2020 – April 2021",
     points: [
-      "Mendesain materi visual untuk kebutuhan akademik dan institusional.",
-      "Mendukung pembuatan konten visual untuk publikasi dan branding universitas.",
-      "Bekerja sama dengan tim internal dalam penyelesaian kebutuhan desain.",
+      "Mengelola dan mengolah data secara terstruktur untuk mendukung kebutuhan administrasi dan operasional Universitas Terbuka Surabaya.",
+      "Mendukung proses pembuatan dan pengolahan kartu mahasiswa dengan memastikan data yang digunakan akurat dan konsisten.",
+      "Mengembangkan kebutuhan desain web untuk mendukung penyajian informasi dan kebutuhan digital institusi.",
+      "Berkolaborasi dengan tim internal dalam menerjemahkan kebutuhan administrasi dan operasional ke dalam solusi digital yang efektif.",
+      "Memastikan pengelolaan data dan kebutuhan digital berjalan secara teliti, terstruktur, dan sesuai dengan kebutuhan pengguna.",
     ],
   },
 ];
@@ -91,18 +94,51 @@ export const projects = [
     period: "November 2025 – Sekarang",
     description:
       "Platform web untuk penjualan sayur dan buah segar langsung dari kebun. Mencakup fitur front-end dan back-end untuk mendukung interaksi pengguna, dengan antarmuka responsif yang fokus pada kemudahan penggunaan dan performa.",
-    tech: ["Next.js", "Laravel", "MySQL", "Tailwind CSS"], // SESUAIKAN dengan teknologi aslinya
-    demo: "", // isi link demo jika ada, contoh: "https://nusagreenmarket.vercel.app"
-    repo: "", // isi link GitHub repo jika boleh dipublikasikan
+    tech: ["Next.js", "Laravel", "MySQL", "Tailwind CSS"], 
+    image: "/proyek/nusagreenmarket.png",
+    demo: "", 
+    repo: "https://github.com/danapraa/nusagreenmarket.git",
   },
   {
     title: "JatimBissa",
-    type: "Front-End Development Project",
+    type: "Frontend Development",
     period: "Februari 2025 – Juni 2025",
     description:
-      "Antarmuka pengguna untuk aplikasi startup Jatim Bissa. Mengimplementasikan desain UI menjadi tampilan web yang responsif dan konsisten, serta berkolaborasi dengan tim backend dan desain.",
-    tech: ["React.js", "Tailwind CSS", "REST API", "Figma"], // SESUAIKAN dengan teknologi aslinya
-    demo: "",
+      "JATIM BISSA merupakan platform yang menghubungkan penyandang disabilitas dengan peluang kerja yang inklusif melalui kerjasama strategis dengan berbagai pihak untuk menciptakan ekosistem ketenagakerjaan yang berkelanjutan. Platform ini dikembangkan atas kerjasama dari Disnakertrans Provinsi Jawa Timur, Komisi Nasional Disabilitas, dan Universitas Telkom Kampus Surabaya. Berperan sebagai Frontend Developer dalam membangun dan mengembangkan Jatim Bissa, sebuah startup dalam program WRAP Entrepreneurship 1 Program 2025 di Bandung Techno Park. Bertanggung jawab menerjemahkan konsep produk menjadi antarmuka digital yang fungsional, responsif, dan berorientasi pada pengalaman pengguna. Terlibat langsung dalam proses pengembangan dan penyempurnaan produk, serta berkolaborasi dengan tim untuk memastikan implementasi front-end selaras dengan kebutuhan produk dan tujuan bisnis startup.",
+    tech: ["Next.js", "Tailwind CSS", "REST API", "Figma"],
+    image: "/proyek/jatimbissa.png",
+    demo: "https://jatimbissa.id/",
+    repo: "",
+  },
+    {
+    title: "Resto LimKokTong Kopitiam Wiyung Surabaya",
+    type: "Full Stack Developer",
+    period: "September 2026 – Oktober 2026",
+    description:
+      "Dari antre dan catatan manual ke satu platform: customer bisa memesan menu dan mereservasi meja dari HP, sementara admin memantau semuanya real-time lewat dashboard. Dibangun full-stack dengan Laravel dan MySQL, lengkap dengan autentikasi berbasis role, keranjang, checkout yang aman, dan manajemen status pesanan.",
+    tech: ["Laravel", "PHP", "MySQL", "Blade", "Tailwind CSS", "Alpine.js"],
+    image: "/proyek/limkoktong.png",
+    repo: "https://github.com/danapraa/resto-laravel.git",
+  },
+    {
+    title: "Absensi QR Dinamis",
+    type: "Full Stack Developer",
+    period: "Agustus 2026 – September 2026 ",
+    description:
+      "Sistem absensi berbasis web dengan QR dinamis yang berganti otomatis setiap 30 detik. Karyawan atau siswa cukup scan QR dengan kamera HP untuk absen masuk dan pulang. Dilengkapi dua peran (admin dan user), validasi token kedaluwarsa, dashboard dan riwayat absensi pribadi, serta rekap harian dan bulanan dengan ekspor Excel untuk admin.",
+    tech: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js"],
+    image: "/proyek/absensi-qr.png",
+    demo: "https://jatimbissa.id/",
+    repo: "",
+  },
+    {
+    title: "UT Surabaya – Redesign Website Kampus",
+    type: "Web Application Project (Studi Kasus)",
+    period: "Agustus 2026 – Oktober 2026",
+    description:
+      "Studi kasus redesign website perguruan tinggi untuk memperbaiki pengalaman calon mahasiswa. Mencakup pendaftaran online, pembayaran admisi, unggah berkas, dan dashboard status, serta panel admin untuk verifikasi dan pengelolaan berita. Dilengkapi counter pendaftar real-time, widget aksesibilitas (kontras tinggi, ukuran teks, text-to-speech), dan chatbot AI yang menjawab dari database.",
+    tech: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js", "Claude API"],
+    image: "/proyek/ut-sby.png",
     repo: "",
   },
 ];

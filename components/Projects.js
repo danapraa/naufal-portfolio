@@ -4,7 +4,7 @@ import SectionHeading from "./SectionHeading";
 import Reveal from "./Reveal";
 import { ExternalLinkIcon, GitHubIcon } from "./Icons";
 
-const banners = ["bg-grape", "bg-ice", "bg-tang"];
+const banners = ["bg-grape", "bg-ice", "bg-tang", "bg-bubble", "bg-sun"];
 const chipColors = ["bg-acid", "bg-sun", "bg-bubble", "bg-ice"];
 
 export default function Projects() {
@@ -21,25 +21,36 @@ export default function Projects() {
           description="Beberapa aplikasi web yang pernah saya kerjakan."
         />
 
-        <div className="grid gap-8 md:grid-cols-2">
+        <div className="flex flex-wrap justify-center gap-8">
           {projects.map((project, i) => (
-            <Reveal key={project.title} delay={i * 150} className="h-full">
-              <article className="brut-card brut-lift flex h-full flex-col overflow-hidden bg-white">
+            <Reveal
+              key={`${project.title}-${i}`}
+              delay={(i % 2) * 120}
+              className="flex w-full md:w-[calc(50%-1rem)]"
+            >
+              <article className="brut-card brut-lift flex w-full flex-col overflow-hidden bg-white">
+                {/* Gambar / banner */}
                 <div
-                  className={`relative flex h-44 items-end overflow-hidden border-b-[3px] border-ink p-5 sm:h-48 ${
+                  className={`relative border-b-[3px] border-ink ${
                     banners[i % banners.length]
                   }`}
                 >
                   {project.image ? (
-                    <Image
-                      src={project.image}
-                      alt={`Tampilan proyek ${project.title}`}
-                      fill
-                      sizes="(min-width: 768px) 50vw, 100vw"
-                      className="object-cover"
-                    />
-                  ) : (
                     <>
+                      <Image
+                        src={project.image}
+                        alt={`Tampilan website ${project.title}`}
+                        width={1600}
+                        height={900}
+                        sizes="(min-width: 768px) 50vw, 100vw"
+                        className="block h-auto w-full"
+                      />
+                      <span className="font-label absolute top-3 left-3 rounded-md border-2 border-ink bg-white px-2 py-0.5 text-xs font-bold">
+                        0{i + 1}
+                      </span>
+                    </>
+                  ) : (
+                    <div className="relative flex aspect-video items-end overflow-hidden p-5">
                       <div className="absolute top-4 left-4 flex gap-1.5">
                         <span className="h-3 w-3 rounded-full border-2 border-ink bg-white" />
                         <span className="h-3 w-3 rounded-full border-2 border-ink bg-white" />
@@ -49,29 +60,36 @@ export default function Projects() {
                       <span className="font-label absolute top-4 right-5 text-5xl font-bold text-ink/20">
                         0{i + 1}
                       </span>
-                      <span className="relative text-3xl font-bold leading-none sm:text-4xl">
+                      <span className="relative text-2xl font-bold leading-none sm:text-3xl">
                         {project.title}
                       </span>
-                    </>
+                    </div>
                   )}
                 </div>
 
-                <div className="flex flex-1 flex-col p-6 sm:p-7">
-                  <span className="font-label inline-block self-start rounded-md border-2 border-ink bg-white px-2.5 py-0.5 text-xs font-bold">
-                    {project.period}
-                  </span>
-                  <h3 className="mt-3 text-2xl font-bold">{project.title}</h3>
-                  <p className="text-sm font-semibold text-ink/60">
-                    {project.type}
-                  </p>
-                  <p className="mt-4 flex-1 leading-relaxed text-ink/75">
+                {/* Isi kartu */}
+                <div className="flex flex-1 flex-col p-6">
+                  <div className="flex flex-wrap items-center gap-x-3 gap-y-2">
+                    <span className="font-label inline-block rounded-md border-2 border-ink bg-white px-2.5 py-0.5 text-xs font-bold">
+                      {project.period}
+                    </span>
+                    <span className="text-sm font-semibold text-ink/60">
+                      {project.type}
+                    </span>
+                  </div>
+
+                  <h3 className="mt-3 text-xl font-bold sm:text-2xl">
+                    {project.title}
+                  </h3>
+
+                  <p className="mt-3 line-clamp-4 flex-1 leading-relaxed text-ink/75">
                     {project.description}
                   </p>
 
-                  <div className="mt-6 flex flex-wrap gap-2">
+                  <div className="mt-5 flex flex-wrap gap-2">
                     {project.tech.map((tech, t) => (
                       <span
-                        key={tech}
+                        key={`${tech}-${t}`}
                         className={`brut-chip ${chipColors[t % chipColors.length]}`}
                       >
                         {tech}
@@ -80,7 +98,7 @@ export default function Projects() {
                   </div>
 
                   {(project.demo || project.repo) && (
-                    <div className="mt-6 flex flex-wrap gap-3">
+                    <div className="mt-5 flex flex-wrap gap-3">
                       {project.demo && (
                         <a
                           href={project.demo}
