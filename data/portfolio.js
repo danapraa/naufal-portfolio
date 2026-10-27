@@ -90,7 +90,7 @@ export const experiences = [
 export const projects = [
   {
     title: "NusaGreenMarket",
-    type: "Web Application Project",
+    type: "Full-Stack Web Application Project",
     period: "November 2025 – Sekarang",
     description:
       "Platform web untuk penjualan sayur dan buah segar langsung dari kebun. Mencakup fitur front-end dan back-end untuk mendukung interaksi pengguna, dengan antarmuka responsif yang fokus pada kemudahan penggunaan dan performa.",
@@ -112,7 +112,7 @@ export const projects = [
   },
     {
     title: "Resto LimKokTong Kopitiam Wiyung Surabaya",
-    type: "Full Stack Developer",
+    type: "Full-Stack Web Application Project",
     period: "September 2026 – Oktober 2026",
     description:
       "Dari antre dan catatan manual ke satu platform: customer bisa memesan menu dan mereservasi meja dari HP, sementara admin memantau semuanya real-time lewat dashboard. Dibangun full-stack dengan Laravel dan MySQL, lengkap dengan autentikasi berbasis role, keranjang, checkout yang aman, dan manajemen status pesanan.",
@@ -122,7 +122,7 @@ export const projects = [
   },
     {
     title: "Absensi QR Dinamis",
-    type: "Full Stack Developer",
+    type: "Full-Stack Web Application Project",
     period: "Agustus 2026 – September 2026 ",
     description:
       "Sistem absensi berbasis web dengan QR dinamis yang berganti otomatis setiap 30 detik. Karyawan atau siswa cukup scan QR dengan kamera HP untuk absen masuk dan pulang. Dilengkapi dua peran (admin dan user), validasi token kedaluwarsa, dashboard dan riwayat absensi pribadi, serta rekap harian dan bulanan dengan ekspor Excel untuk admin.",
@@ -132,14 +132,14 @@ export const projects = [
     repo: "",
   },
     {
-    title: "UT Surabaya – Redesign Website Kampus",
-    type: "Web Application Project (Studi Kasus)",
-    period: "Agustus 2026 – Oktober 2026",
+    title: "Pasarin",
+    type: "Full-Stack Web Application Project",
+    period: "Agustus 2026 – September 2026",
     description:
-      "Studi kasus redesign website perguruan tinggi untuk memperbaiki pengalaman calon mahasiswa. Mencakup pendaftaran online, pembayaran admisi, unggah berkas, dan dashboard status, serta panel admin untuk verifikasi dan pengelolaan berita. Dilengkapi counter pendaftar real-time, widget aksesibilitas (kontras tinggi, ukuran teks, text-to-speech), dan chatbot AI yang menjawab dari database.",
-    tech: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js", "Claude API"],
-    image: "/proyek/ut-sby.png",
-    repo: "",
+      "Marketplace multi-seller dengan tiga peran pengguna (Admin, Seller, Customer). Mencakup fitur front-end dan back-end: autentikasi dengan redirect otomatis sesuai role, panel admin untuk mengelola kategori dan produk dengan upload gambar, dashboard seller, serta storefront publik dengan pencarian, filter kategori, dan halaman detail produk. Antarmuka responsif dengan desain kustom yang playful dan konsisten.",
+    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "Alpine.js", "Spatie Permission"],
+    image: "/proyek/pasarin.png",
+    repo: "https://github.com/danapraa/pasarin-laravel.git",
   },
 ];
 
@@ -151,11 +151,10 @@ export const education = {
     "Program Studi Informatika, Fakultas Informatika. Menyelesaikan proyek akademik terkait pengembangan aplikasi web dan desain antarmuka pengguna.",
 };
 
-// Hapus atau ubah sesuai sertifikat yang kamu miliki. Kosongkan array ([]) untuk menyembunyikan bagian ini.
 export const certifications = [
   {
-    name: "Dasar-Dasar Node.js", // SESUAIKAN nama persis di sertifikat
-    issuer: "Bisa AI Academy", // SESUAIKAN
-    year: "", // isi tahun, contoh: "2025"
+    name: "Dasar-Dasar Node.js",
+    issuer: "Bisa AI Academy", 
+    year: "2026",
   },
 ];
