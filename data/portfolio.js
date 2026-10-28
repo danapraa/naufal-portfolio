@@ -8,12 +8,11 @@ export const profile = {
     "Saya membangun aplikasi web yang fungsional, responsif, dan nyaman digunakan, dengan React.js, Next.js, Laravel, dan MySQL.",
   location: "Surabaya, Indonesia",
   email: "falxuee@gmail.com",
-  phone: "0895-1756-1511",
-  whatsapp: "https://wa.me/6289517561511",
+  phone: "0812-3754-3608",
+  whatsapp: "https://wa.me/6281237543608",
   linkedin: "https://www.linkedin.com/in/naufalwahyu/",
   github: "https://github.com/danapraa",
-  // Taruh file CV kamu di folder public/ dengan nama persis seperti ini
-  cv: "/CV-Naufal-Wahyu-Pradana.pdf",
+  cv: "/CV-ATS-NAUFAL.pdf",
   heroTech: ["Laravel", "Next.js", "React.js", "Node.js", "MySQL", "Figma"],
 };
 
@@ -32,7 +31,15 @@ export const about = {
 export const skillGroups = [
   {
     title: "Frontend",
-    items: ["React.js", "Next.js", "JavaScript", "HTML", "CSS", "Tailwind CSS", "Bootstrap"],
+    items: [
+      "React.js",
+      "Next.js",
+      "JavaScript",
+      "HTML",
+      "CSS",
+      "Tailwind CSS",
+      "Bootstrap",
+    ],
   },
   {
     title: "Backend",
@@ -91,12 +98,11 @@ export const projects = [
   {
     title: "NusaGreenMarket",
     type: "Full-Stack Web Application Project",
-    period: "November 2025 – Sekarang",
+    period: "November 2025 – Januari 2026",
     description:
       "Platform web untuk penjualan sayur dan buah segar langsung dari kebun. Mencakup fitur front-end dan back-end untuk mendukung interaksi pengguna, dengan antarmuka responsif yang fokus pada kemudahan penggunaan dan performa.",
-    tech: ["Next.js", "Laravel", "MySQL", "Tailwind CSS"], 
+    tech: ["Next.js", "Laravel", "MySQL", "Tailwind CSS"],
     image: "/proyek/nusagreenmarket.png",
-    demo: "", 
     repo: "https://github.com/danapraa/nusagreenmarket.git",
   },
   {
@@ -108,9 +114,8 @@ export const projects = [
     tech: ["Next.js", "Tailwind CSS", "REST API", "Figma"],
     image: "/proyek/jatimbissa.png",
     demo: "https://jatimbissa.id/",
-    repo: "",
   },
-    {
+  {
     title: "Resto LimKokTong Kopitiam Wiyung Surabaya",
     type: "Full-Stack Web Application Project",
     period: "September 2026 – Oktober 2026",
@@ -120,7 +125,7 @@ export const projects = [
     image: "/proyek/limkoktong.png",
     repo: "https://github.com/danapraa/resto-laravel.git",
   },
-    {
+  {
     title: "Absensi QR Dinamis",
     type: "Full-Stack Web Application Project",
     period: "Agustus 2026 – September 2026 ",
@@ -128,16 +133,22 @@ export const projects = [
       "Sistem absensi berbasis web dengan QR dinamis yang berganti otomatis setiap 30 detik. Karyawan atau siswa cukup scan QR dengan kamera HP untuk absen masuk dan pulang. Dilengkapi dua peran (admin dan user), validasi token kedaluwarsa, dashboard dan riwayat absensi pribadi, serta rekap harian dan bulanan dengan ekspor Excel untuk admin.",
     tech: ["Laravel", "MySQL", "Tailwind CSS", "Alpine.js"],
     image: "/proyek/absensi-qr.png",
-    demo: "https://jatimbissa.id/",
     repo: "",
   },
-    {
+  {
     title: "Pasarin",
     type: "Full-Stack Web Application Project",
     period: "Agustus 2026 – September 2026",
     description:
       "Marketplace multi-seller dengan tiga peran pengguna (Admin, Seller, Customer). Mencakup fitur front-end dan back-end: autentikasi dengan redirect otomatis sesuai role, panel admin untuk mengelola kategori dan produk dengan upload gambar, dashboard seller, serta storefront publik dengan pencarian, filter kategori, dan halaman detail produk. Antarmuka responsif dengan desain kustom yang playful dan konsisten.",
-    tech: ["Laravel", "PHP", "MySQL", "Tailwind CSS", "Alpine.js", "Spatie Permission"],
+    tech: [
+      "Laravel",
+      "PHP",
+      "MySQL",
+      "Tailwind CSS",
+      "Alpine.js",
+      "Spatie Permission",
+    ],
     image: "/proyek/pasarin.png",
     repo: "https://github.com/danapraa/pasarin-laravel.git",
   },
@@ -151,10 +162,82 @@ export const education = {
     "Program Studi Informatika, Fakultas Informatika. Menyelesaikan proyek akademik terkait pengembangan aplikasi web dan desain antarmuka pengguna.",
 };
 
-export const certifications = [
+export const achievements = [
   {
-    name: "Dasar-Dasar Node.js",
-    issuer: "Bisa AI Academy", 
-    year: "2026",
+    title: "Peserta Hackathon 8.0 - Web3 Innovation",
+    organizer: "Internet Computer (ICP) Hub Indonesia",
+    year: " Juli 2025",
+    level: "Nasional",
+    description: "Berpartisipasi dalam Hackathon 8.0 yang diselenggarakan dalam ekosistem Internet Computer Protocol (ICP), dengan kontribusi terhadap pengembangan inovasi berbasis Web3.",
+    image: "/prestasi/prestasi-satu.jpg",
+  },
+  {
+    title: "HOLOGY 7.0 UX Design Achievement",
+    organizer: "Fakultas Ilmu Komputer, Universitas Brawijaya",
+    year: "November 2025",
+    level: "Nasional",
+    description: "Kegiatan ini mengusung tema “ICT for Human Capital Development: Leveraging Technology for Indonesian Societal Advancement” dan memberikan pengalaman dalam bidang desain pengalaman pengguna (UX Design) serta pengembangan solusi berbasis teknologi informasi.",
+    image: "/prestasi/prestasi-dua.png",
+  },
+  {
+    title: "Peraih Medali Emas Kompetisi Sains Se-Indonesia (KSSI) 2025 Bidang Matematika",
+    organizer: "Generasi Maju Indonesia (GEMANESIA)",
+    year: "Februari",
+    level: "Nasional",
+    description: "Meraih medali emas pada Kompetisi Sains Se-Indonesia (KSSI) 2025 bidang Matematika tingkat perguruan tinggi dengan predikat A+.",
+    image: "/prestasi/prestasi-tiga.png",
+  },
+];
+
+// ---------- SERTIFIKASI & PELATIHAN ----------
+export const certificationGroups = [
+  {
+    title: "Sertifikasi Bahasa Inggris",
+    items: [
+      {
+        name: "English Proficiency Test (EPrT)",
+        issuer: "Telkom University Language Center",
+        year: "2026 - 2028",
+        score: "Skor 410",
+        image: "/sertifikat/english-1.png",
+      },
+      {
+        name: "English Communicative Competence Test (ECCT)",
+        issuer: "Telkom University Language Center",
+        year: "2025 - 2027",
+        score: "Skor 2,5",
+        image: "/sertifikat/english-2.png",
+        link: "",
+      },
+    ],
+  },
+  {
+    title: "Pelatihan",
+    items: [
+      {
+        name: "Dasar-Dasar Node.js",
+        issuer: "Bisa AI Academy",
+        year: "2026",
+        description:
+          "Pelatihan Dasar-Dasar Node.js yang diselenggarakan oleh Bisa AI Academy untuk mempelajari konsep dasar Node.js, pengelolaan modul menggunakan NPM, instalasi dan pembaruan modul, serta pengelolaan dependensi dalam proyek JavaScript. Pelatihan ini bertujuan membangun pemahaman dasar mengenai lingkungan runtime JavaScript di sisi server sebagai landasan untuk pengembangan aplikasi berbasis web.",
+        image: "/sertifikat/pelatihan-1.png",
+      },
+      {
+        name: "Road to U-Connect 2022 - “Ngobrol Bareng Ahli Cybersecurity & Persiapan Berkarir di Bidang IT.",
+        issuer: "Infradigital foundation",
+        year: "2022",
+        description:
+          "Mengikuti webinar Road to U-Connect 2022 dengan tema “Ngobrol Bareng Ahli Cybersecurity & Persiapan Berkarir di Bidang IT”. Kegiatan ini memberikan wawasan mengenai bidang cybersecurity serta gambaran mengenai persiapan dan pengembangan kompetensi untuk membangun karier di bidang teknologi informasi.",
+        image: "/sertifikat/pelatihan-2.jpg",
+      },
+      {
+        name: "Basic Figma : Pembuatan UI Aplikasi Mobile",
+        issuer: "Bisa AI Academy",
+        year: "2026",
+        description:
+          "Pelatihan membahas dasar penggunaan Figma untuk merancang antarmuka (UI) aplikasi mobile, meliputi pembuatan desain antarmuka, penyusunan elemen visual, dan penerapan prinsip dasar desain UI/UX. Pelatihan bertujuan meningkatkan kompetensi dalam merancang tampilan aplikasi mobile menggunakan Figma.",
+        image: "/sertifikat/pelatihan-3.png",
+      },
+    ],
   },
 ];

@@ -42,7 +42,7 @@ export default function Contact() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-5 sm:px-6 lg:grid-cols-[1.1fr_1fr] lg:gap-16">
         <Reveal>
           <p className="font-label inline-block rounded-lg border-2 border-ink bg-white px-3 py-1 text-xs font-bold uppercase tracking-widest shadow-hard-sm">
-            06 / Kontak
+            08 / Kontak
           </p>
           <h2 className="mt-5 text-4xl font-bold leading-[1.02] tracking-tight sm:text-6xl">
             Ayo bikin sesuatu{" "}
@@ -51,8 +51,8 @@ export default function Contact() {
             </span>
           </h2>
           <p className="mt-6 max-w-lg text-base font-medium leading-relaxed sm:text-lg">
-            Saya terbuka untuk posisi Web Developer, Front-End Developer, atau
-            Junior Software Developer. Silakan hubungi saya kapan saja.
+            Saya terbuka untuk posisi Web Developer, Front-End Developer, 
+            Junior Software Developer, dan UI/UX Designer Silakan hubungi saya kapan saja.
           </p>
           <a
             href={`mailto:${profile.email}`}
