@@ -12,7 +12,7 @@ export const profile = {
   whatsapp: "https://wa.me/6281237543608",
   linkedin: "https://www.linkedin.com/in/naufalwahyu/",
   github: "https://github.com/danapraa",
-  cv: "/CV-ATS-NAUFAL.pdf",
+  cv: "/CV-Naufal Wahyu Pradana.pdf",
   heroTech: ["Laravel", "Next.js", "React.js", "Node.js", "MySQL", "Figma"],
 };
 
